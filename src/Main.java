@@ -6,8 +6,8 @@ public class Main {
         ArrayList<SeguroDeVida> seguros = new ArrayList<>();
 
         for (int i = 0; i < 10; i++) {
-            contas.add(new ContaCorrente());
-            contas.add(new ContaPoupanca());
+            contas.add(new ContaCorrente(Math.floor(Math.random() * 1000) + 1000));
+            contas.add(new ContaPoupanca(Math.floor(Math.random() * 1000) + 1000));
         }
     }
 }
