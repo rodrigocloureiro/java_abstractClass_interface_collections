@@ -1,8 +1,14 @@
 public class Conta {
     private double saldo;
+    private String nome;
 
-    public Conta(double saldo) {
+    public Conta(double saldo,String nome) {
         this.saldo = saldo;
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return this.nome;
     }
 
     public void sacar(double valor) {
