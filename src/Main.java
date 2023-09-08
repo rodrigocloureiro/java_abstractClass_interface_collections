@@ -22,6 +22,9 @@ public class Main {
         tributaveis.addAll(seguros);
         tributaveis.sort(comparing(Tributavel::calculaTributos).reversed());
 
-
+        // Imprimindo os tributos em ordem decrescente e o tipo da instância
+        for (Tributavel tributavel : tributaveis) {
+            System.out.printf("R$ %.2f - %s\n", tributavel.calculaTributos(), tributavel.getClass().getName());
+        }
     }
 }
