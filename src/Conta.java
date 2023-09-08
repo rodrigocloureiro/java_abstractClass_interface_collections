@@ -1,6 +1,10 @@
 public class Conta {
     private double saldo;
 
+    public Conta(double saldo) {
+        this.saldo = saldo;
+    }
+
     public void sacar(double valor) {
         if (valor <= this.saldo) this.saldo -= valor;
         else System.out.println("Saldo insuficiente..");
