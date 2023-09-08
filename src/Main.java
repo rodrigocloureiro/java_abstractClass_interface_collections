@@ -10,5 +10,7 @@ public class Main {
             contas.add(new ContaPoupanca(Math.floor(Math.random() * 1000) + 1000));
             seguros.add(new SeguroDeVida());
         }
+
+        ArrayList<Tributavel> tributaveis = new ArrayList<>();
     }
 }
