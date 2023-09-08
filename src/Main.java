@@ -7,9 +7,9 @@ public class Main {
         ArrayList<SeguroDeVida> seguros = new ArrayList<>();
 
         for (int i = 0; i < 10; i++) {
-            contas.add(new ContaCorrente(Math.floor(Math.random() * 2000) + 3000));
-            contas.add(new ContaPoupanca(Math.floor(Math.random() * 2000) + 3000));
-            seguros.add(new SeguroDeVida());
+            contas.add(new ContaCorrente((Math.floor(Math.random() * 2000) + 3000), String.format("Nome%.1f", Math.floor(Math.random() * 2000) + 3000)));
+            contas.add(new ContaPoupanca((Math.floor(Math.random() * 2000) + 3000), String.format("Nome%.1f", Math.floor(Math.random() * 2000) + 3000)));
+            seguros.add(new SeguroDeVida(String.format("%.1f", Math.floor(Math.random() * 2000) + 3000)));
         }
 
         ArrayList<Tributavel> tributaveis = new ArrayList<>();
