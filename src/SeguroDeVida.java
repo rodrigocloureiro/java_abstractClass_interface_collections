@@ -1,5 +1,5 @@
 public class SeguroDeVida implements Tributavel {
-    private final double taxa = 42.00;
+    private final double TAXA = 42.00;
     private String nome;
 
     public SeguroDeVida(String nome) {
